@@ -29,7 +29,7 @@ nav div ul li a i {
 }
 
 .nav-button-container {
-    width: 80px;
+    width: 82px;
     height: 44px;
     border-radius: 20px;
     border: 1px solid white;
@@ -38,10 +38,74 @@ nav div ul li a i {
     align-items: center;    
 }
 
-.nav-button-container:hover .nav-button{
+.nav-button-container:hover .nav-button {
     background-color: gray;
 }
 
 .nav-button-container:hover {
     border-color: gray;
+}
+
+/* JUMBO */
+.jumbo-container {
+    background-image: url(../img/jumbo-bg.png);
+    background-size: cover;
+}
+
+.jumbo-container .container {
+    color: white;
+}
+
+.jumbo-game-logo {
+    width: 180px;
+    padding-top: 300px;
+}
+
+.jumbo-game-logo img {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.jumbo-txt p {
+    font-size: 9px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.jumbo-button {
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 48px;
+}
+
+@media screen and (min-width: 992px) {
+    .jumbo-txt p {
+        font-size: 12px;
+    }
+}
+
+/* SMALL BOXES GAME PREVIEWS */
+.small-previews {
+    padding-top: 24px;
+}
+
+.small-box {
+    border-radius: 20px;
+    border: 1px solid white; /* to mantain space */
+    margin-top: 12px;
+}
+
+.small-box:hover {
+    border: 2px solid blue;
+}
+.small-box-inner {
+    border: 2px solid white;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.small-box img {
+    width: 100%;
 }
