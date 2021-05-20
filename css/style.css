@@ -337,3 +337,95 @@ nav div ul li a i {
         font-size: 15px;
     }
 }
+
+/* PS4 SECTION */
+.ps4-section-title {
+    margin-top: 48px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.ps4-section-description {
+    font-size: 12px;
+    color: grey;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.ps4-item-img {
+    width: 324px;
+    margin-top: 24px;
+}
+
+.ps4-item-img img {
+    width: 100%;
+}
+
+.ps4-item-description p {
+    color: gray;
+}
+
+.ps4-button {
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.ps4 {
+    padding-bottom: 48px;
+}
+
+@media screen and (min-width: 576px) {
+    .ps4-section-title h1 {
+        font-size: 36px;
+    }
+    
+    .ps4-item-img {
+        width: 520px;
+    }
+
+    .ps4-section-description p {
+        font-size: 21px;
+    }
+
+    .ps4-item-description p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .ps4-section-title h1 {
+        font-size: 36px;
+    }
+    
+    .ps4-item-img {
+        width: 190px;
+    }
+
+    .ps4-item-description p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .ps4-section-title h1 {
+        font-size: 36px;
+    }
+    
+    .ps4-item-img {
+        width: 300px;
+    }
+
+    .ps4-item-description p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .ps4-item-img {
+        width: 350px;
+    }
+
+    .ps4-item-description p {
+        font-size: 20px;
+    }
+}
