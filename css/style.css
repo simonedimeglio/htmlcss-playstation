@@ -224,4 +224,65 @@ nav div ul li a i {
     }
 }
 
+/* IT TAKES TWO SECTION (COOP GAMING) */
+.coop-container {
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
+.coop-container .container {
+    color: white;
+}
+
+.coop-game-logo {
+    width: 180px;
+    padding-top: 48px;
+}
+
+.coop-game-logo img {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.coop-title h1 {
+    font-size: 25px;
+}
+
+.coop-txt p {
+    font-size: 9px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.coop-button {
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 20px;
+    font-size: 15px;
+    margin-bottom: 48px;
+}
+
+@media screen and (min-width: 576px) {
+    .coop-game-logo {
+        width: 300px;
+    }
+    .coop-title h1 {
+        font-size: 35px;
+    }
+    .coop-txt p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .coop-txt p {
+        font-size: 12px;
+    }
+    .coop-title h1 {
+        font-size: 34px;
+    }
+    .coop-txt p {
+        font-size: 13px;
+    }
+}
