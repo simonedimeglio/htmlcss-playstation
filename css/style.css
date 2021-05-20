@@ -286,3 +286,54 @@ nav div ul li a i {
         font-size: 13px;
     }
 }
+
+/* NEW GAME RELEASE SECTION */
+.newgame-container{
+    background-color: rgb(42, 41, 41);
+}
+
+.newgame-section-title {
+    color: white;
+    margin-top: 24px;
+}
+.newgame-section-title h1 {
+    font-size: 18px;
+}
+
+.newgame-section-title h3 {
+    font-size: 14px;
+}
+
+.newgame-squares {
+    padding-bottom: 48px;
+}
+
+.newgame-item-img {
+    margin-top: 24px;
+}
+
+.newgame-item-img img {
+    width: 100%;
+    border-radius: 14px;
+}
+
+.newgame-item-txt {
+    margin-top: 12px;
+}
+
+.newgame-item-txt h6 {
+    color: white;
+    font-size: 10px;
+}
+
+@media screen and (min-width: 576px) {
+    .newgame-section-title h1 {
+        font-size: 30px;
+    }
+    .newgame-section-title h3 {
+        font-size: 24px;
+    }
+    .newgame-item-txt h6 {
+        font-size: 15px;
+    }
+}
