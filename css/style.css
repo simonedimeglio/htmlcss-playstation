@@ -537,3 +537,48 @@ inserting the media queries at the end of each of them  */
 .social-box img {
     width: 100%;
 }
+
+/* FOOTER */
+footer {
+    background-color: blue;
+    color: white;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: white; /* reset hover default effect */
+}
+
+.footer-ps-logo {
+    margin-bottom: 24px;
+}
+
+.footer-ps-logo img {
+    width: 15%;
+    filter: brightness(0) invert(1);
+}
+
+.bottom-footer-section img {
+    width: 25%;
+    margin-top: 48px;
+    margin-bottom: 12px;
+}
+
+.bottom-footer-section p {
+    font-size: 12px;
+}
