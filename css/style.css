@@ -4,6 +4,12 @@ inserting the media queries at the end of each of them  */
 /* I preferred to insert hover effect and transitions
 starting from MD screens resolutions (768px width) */
 
+/* Utilities */
+.custom-padding {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 /* LOGO-TOPBAR (Sony Logo) */
 .logo-topbar {
     background-color: black;
@@ -78,7 +84,7 @@ starting from MD screens resolutions (768px width) */
 }
 
 .jumbo-game-logo {
-    width: 180px;
+    width: 60%;
     padding-top: 300px;
 }
 
@@ -88,14 +94,20 @@ starting from MD screens resolutions (768px width) */
 }
 
 .jumbo-txt p {
-    font-size: 9px;
+    font-size: 12px;
     margin-top: 12px;
     margin-bottom: 24px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 576px) {
     .jumbo-txt p {
-        font-size: 12px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .jumbo-txt p {
+        font-size: 14px;
     }
 }
 
@@ -194,10 +206,7 @@ starting from MD screens resolutions (768px width) */
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.ps5-item-container:hover {
-    border-bottom: 1px solid #2d64e6;
+    height: 180px;
 }
 
 .ps5-item-img {
@@ -222,6 +231,9 @@ starting from MD screens resolutions (768px width) */
     .ps5-item-img {
         height: 90px;
     }
+    .ps5-item-container {
+        height: 100px;
+    }
 }
 
 @media screen and (min-width: 576px) {
@@ -230,6 +242,9 @@ starting from MD screens resolutions (768px width) */
     }
     .ps5-sub-description {
         font-size: 18px;
+    }
+    .ps5-item-img {
+        height: 170px;
     }
 }
 
@@ -243,6 +258,21 @@ starting from MD screens resolutions (768px width) */
     .ps5-item-img {
         height: 60px;
     }
+    .ps5-item-img img {
+        opacity: 0.7;
+        -webkit-transition: opacity 0.5s ease-out;
+        -moz-transition: opactiy 0.5s ease-out;
+        -ms-transition: opacity 0.5s ease-out;
+        -o-transition: opacity 0.5s ease-out;
+        transition: opacity 0.5s ease-out;
+    }
+    .ps5-item-container:hover .ps5-item-img img{
+        opacity: 1.0;
+    }
+    .ps5-item-container:hover {
+        border-bottom: 1px solid #2d64e6;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -267,7 +297,6 @@ starting from MD screens resolutions (768px width) */
 
 .coop-game-logo {
     width: 180px;
-    padding-top: 48px;
 }
 
 .coop-game-logo img {
@@ -316,7 +345,6 @@ starting from MD screens resolutions (768px width) */
 
 .newgame-section-title {
     color: white;
-    margin-top: 24px;
 }
 .newgame-section-title h1 {
     font-size: 18px;
@@ -362,7 +390,6 @@ starting from MD screens resolutions (768px width) */
 
 /* PS4 SECTION */
 .ps4-section-title {
-    margin-top: 48px;
     margin-bottom: 12px;
     text-align: center;
 }
@@ -452,6 +479,10 @@ starting from MD screens resolutions (768px width) */
     background-color: rgba(190,188,187,255);
 }
 
+.psplus-logo {
+    padding-top: 48px;
+}
+
 .psplus-logo img {
     width: 100%;
 }
@@ -460,8 +491,13 @@ starting from MD screens resolutions (768px width) */
     display: none; 
 }
 
+.psplus-description {
+    padding-top: 48px;
+    font-size: 10px;
+}
+
 .psplus-game-img {
-    height: 500px; 
+    height: 350px; 
 }
 
 .psplus-game-img img {
@@ -471,22 +507,50 @@ starting from MD screens resolutions (768px width) */
 #bc-plus {
     background-color: rgba(190,188,187,255);
     border-color: rgba(190,188,187,255);
+    opacity: 0.6;
+    padding-bottom: 24px;
+}
+
+#csb-plus {
+    color: #2d64e6;
+}
+
+@media screen and (min-width: 575px) and (max-width: 767px){
+    .psplus-description {
+        font-size: 17px;
+        padding-top: 24px;
+        padding-bottom: 17px;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .psplus-game {
         display: block;
     }
-
     #bc-plus:hover {
-        border-color: #2d64e6;
-        cursor: pointer;
+        border-color: white;
+    }
+    .psplus-description {
+        padding-bottom: 12px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .psplus-game-img {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .psplus-description {
+        padding-bottom: 0;
+        font-size: 25px;
     }
 }
 
 /* PLAYSTATION STORE SECTION */
 .psstore-title {
-    margin-top: 48px;
     margin-bottom: 12px;
     text-align: center;
 }
@@ -499,12 +563,23 @@ starting from MD screens resolutions (768px width) */
 }
 
 .psstore-img-container {
-    margin-bottom: 48px;
+    margin-bottom: 24px;
 }
-
 
 .psstore-img-container img {
     width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .psstore-description {
+    font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .psstore-description {
+    font-size: 20px;
+    }
 }
 
 /* PLAYSTATION NOW SECTION */
@@ -512,8 +587,19 @@ starting from MD screens resolutions (768px width) */
     background-color: #161c3b;
 }
 
+.psnow-logo {
+    padding-top: 12px;
+}
+
 .psnow-logo img {
     width: 100%;
+}
+
+.psnow-description {
+    color: white;
+    padding-top: 48px;
+    padding-bottom: 24px;
+    font-size: 10px;
 }
 
 .psnow-game {
@@ -521,32 +607,59 @@ starting from MD screens resolutions (768px width) */
 }
 
 .psnow-game-img {
-    height: 500px; 
+    height: 350px; 
 }
 
 .psnow-game-img img {
-    height:  100%;     
+    height: 100%;     
 }
 
 #bc-now {
     background-color: #161c3b;
     border-color: #161c3b;
+    padding-bottom: 24px;
 }
+
+@media screen and (min-width: 575px) and (max-width: 767px){
+    .psnow-description {
+        font-size: 17px;
+        padding-top: 24px;
+        padding-bottom: 17px;
+    }
+}
+/* @media screen and (max-width: 767px) {
+    .psnow-description {
+        padding-top: 24px;
+        padding-bottom: 12px;
+        font-size: 15px;
+    }
+} */
 
 @media screen and (min-width: 768px) {
     .psnow-game {
         display: block;
     }
-    #bc-now:hover {
-        border-color: #2d64e6;
-        cursor: pointer;
+    #bc-now:hover{
+        border-color: white;
+    }
+    .psnow-description {
+        font-size: 17px;
     }
 }
 
+@media screen and (max-width: 991px) {
+    .psnow-game-img {
+        height: 300px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .psnow-description {
+        font-size: 22px;
+    }
+}
 /* SOCIAL MEDIA */
 .social-title {
     text-align: center;
-    margin-top: 48px;
     margin-bottom: 36px;
 }
 
@@ -567,8 +680,7 @@ starting from MD screens resolutions (768px width) */
 footer {
     background-color: #00439c;
     color: white;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 24px;
 }
 
 footer ul {
@@ -608,14 +720,26 @@ footer a:hover {
     font-size: 12px;
 }
 
+@media screen and (max-width: 575px) {
+    .bottom-footer-section img {
+    width: 40%;
+    }
+    .footer-ps-logo img {
+        width: 24%;
+    }
+}
+
+
 
 /* 
 CUSTOM BUTTONS and relative queries
 csb = custom button
+csbg-white = white background button
 csbg-red = red background button
 csbg-blue = blue background button
-bcl-red, bcl-blue = button container light
-bcd-red, bcd-blue = button container dark
+bc-white = white button container
+bcl-red, bcl-blue = light container
+bcd-red, bcd-blue = dark container
 */
 
 .csb {
@@ -626,6 +750,14 @@ bcd-red, bcd-blue = button container dark
     border-radius: 24px;
     color: white;
     font-size: 12px;
+}
+
+.bc-white {
+    border: 1px solid white ;
+    border-radius: 24px;
+    max-width: 50%;
+    background: white;
+    padding: 2px;
 }
 
 .bcl-red, .bcl-blue{
@@ -643,6 +775,11 @@ bcd-red, bcd-blue = button container dark
     padding: 2px;
 }
 
+.csbg-white {
+    background-color: white;
+    color: black;
+}
+
 .csbg-red {
     background-color: #cd3d0f;
 }
@@ -651,18 +788,26 @@ bcd-red, bcd-blue = button container dark
     background-color: #2d64e6;
 }
 
+
+
 @media screen and (max-width: 575px) {
-    .bcl-red, .bcl-blue, .bcd-red, .bcd-blue {
+    .bcl-red, .bcd-red {
         max-width: 35%;
     }
+    .bcl-blue, .bcd-blue, bc-white {
+        max-width: 40%;
+    }
     .csb {
-        font-size: 9px;
+        font-size: 10px;
     }
 }
 
 @media screen and (min-width: 576px) {
-    .bcl-red, .bcl-blue, .bcd-red, .bcd-blue {
-        max-width: 35%;
+    .bcl-blue, .bcd-blue, bc-white {
+        max-width: 30%;
+    }
+    .bcl-red, .bcd-red {
+        max-width: 20%;
     }
     .csb {
         font-size: 12px;
@@ -685,5 +830,18 @@ bcd-red, bcd-blue = button container dark
     .bcd-blue:hover {
         border-color: #2d64e6;
         cursor: pointer;
+    }
+    .bc-white:hover {
+        border-color: white;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .bcl-red, .bcd-red {
+        max-width: 35%;
+    }
+    .bcl-blue, .bcd-blue, bc-white {
+        max-width: 40%;
     }
 }
