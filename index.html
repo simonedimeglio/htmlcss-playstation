@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Playstation 5 | Play Has No Limits</title>
 </head>
 
@@ -20,7 +20,7 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light" aria-label="Fifth navbar example">
+    <nav class="navbar navbar-expand-lg navbar-light" id="sticky-bar" aria-label="Fifth navbar example">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="img/play_logo.svg" alt="Playstation logo">
@@ -33,35 +33,28 @@
             <div class="collapse navbar-collapse" id="navbarsExample05">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Giochi<i
-                                class="fas fa-chevron-down"></i></a>
+                        <a class="nav-link nav-arrow active" aria-current="page" href="#">Giochi </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Hardware<i
-                                class="fas fa-chevron-down"></i></a>
+                        <a class="nav-link nav-arrow active" aria-current="page" href="#">Hardware </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Servizi<i
-                                class="fas fa-chevron-down"></i></a>
+                        <a class="nav-link nav-arrow active" aria-current="page" href="#">Servizi </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Novità<i
-                                class="fas fa-chevron-down"></i></a>
+                        <a class="nav-link nav-arrow active" aria-current="page" href="#">Novità </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Fai acquisti<i
-                                class="fas fa-chevron-down"></i></a>
+                        <a class="nav-link nav-arrow active" aria-current="page" href="#">Fai acquisti </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Supporto<i
-                                class="fas fa-chevron-down"></i></a>
+                        <a class="nav-link nav-arrow active" aria-current="page" href="#">Supporto </a>
                     </li>
                 </ul>
                 <div>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">My PlayStation<i
-                                    class="fas fa-chevron-down"></i></a>
+                            <a class="nav-link nav-arrow active" aria-current="page" href="#">My PlayStation </i></a>
                         </li>
                         <li class="nav-item">
                             <div class="nav-button-container">
@@ -419,6 +412,130 @@
                         <p>Migliora la tua esperienza PS4 con una gamma di accessori ufficiali.</p>
                     </div>
                     <button type="button" class="btn btn-primary ps4-button">Scopri di più</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PLAYSTATION PLUS SECTION -->
+    <div class="psplus-container">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="psplus-logo">
+                                <img src="img/ps-plus-logo.png" alt="Playstation Plus">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="psplus-description">
+                        <p>Migliora la tua esperienza PlayStation con l'accesso a multigiocatore online, giochi mensili, sconti esclusivi e altro ancora.</p>
+                    </div>
+                    <div class="psplus-button">
+                        <button type="button" class="btn btn-primary psplus-button">Esplora PlayStation Plus</button>
+                    </div>
+                </div>
+                <div class="col-md-6 psplus-game">
+                    <div class="psplus-game-img">
+                        <img src="img/ps-plus-april-monthly-games-featured-image-block.png" alt="Playstation Plus games">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PLAYSTATION STORE SECTION -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="psstore-title">
+                    <h1>Nuovi sconti sul PlayStation Store</h1>
+                </div>
+                <div class="psstore-description">
+                    <p>Sconti pazzeschi, collezioni curate e saldi stagionali su PS5, PS4 e PS VR, tutti in un unico posto.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="psstore-img-container">
+                    <img src="img/playstation-store-games-under-20-spotlight.jpg" alt="Game Sales">
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="psstore-img-container">
+                    <img src="img/playstation-store-golden-week-sale-spotlight.jpg" alt="Golden Week">
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="psstore-img-container">
+                    <img src="img/playstation-store-free-to-play-spotlight.png" alt="Free to Play">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PLAYSTATION NOW SECTION -->
+    <div class="psnow-container">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="psnow-logo">
+                                <img src="img/ps-now-logo-two-column.png" alt="Playstation Now">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="psnow-description">
+                        <p>Ottieni l'accesso immediato a una vastissima raccolta di oltre 800 giochi per PS4, PS3 e PS2 su PS4 o PC Windows, con nuovi titoli aggiunti ogni mese</p>
+                    </div>
+                    <div class="psnow-button">
+                        <button type="button" class="btn btn-primary psnow-button">Esplora PlayStation Now</button>
+                    </div>
+                </div>
+                <div class="col-md-6 psnow-game">
+                    <div class="psnow-game-img">
+                        <img src="img/ps-now-april-featured-image-block.png" alt="Playstation Now games">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SOCIAL MEDIA -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="social-title">
+                    <h2>Seguici sui social media</h2>
+                </div>
+                <div class="col social-box-container">
+                    <div class="row">
+                        <div class="col-6 offset-0 col-sm-3 col-md-2 offset-md-2">
+                            <div class="social-box">
+                                <img src="img/twitter.jpg" alt="Twitter">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-3 col-md-2">
+                            <div class="social-box">
+                                <img src="img/facebook.jpg" alt="Facebook">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-3 col-md-2">
+                            <div class="social-box">
+                                <img src="img/instagram.jpg" alt="Instagram">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-3 col-md-2">
+                            <div class="social-box">
+                                <img src="img/youtube.png" alt="YouTube">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

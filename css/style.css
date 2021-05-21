@@ -20,10 +20,21 @@ inserting the media queries at the end of each of them  */
 }
 
 /* NAVBAR */
-nav div ul li a i {
-    color: gray;
+#sticky-bar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1001;
+}
+
+.nav-arrow::after {
+    content: "\f078";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
     font-size: 12px;
-    margin-left: 6px;
+    vertical-align: middle;
+    color: gray;
 }
 
 .nav-button {
@@ -428,4 +439,101 @@ nav div ul li a i {
     .ps4-item-description p {
         font-size: 20px;
     }
+}
+
+/* PLAYSTATION PLUS SECTION */
+.psplus-container {
+    background-color: lightgrey;
+}
+
+.psplus-logo img {
+    width: 100%;
+}
+
+.psplus-game {
+    display: none; 
+}
+
+.psplus-game-img {
+    height: 500px; 
+}
+
+.psplus-game-img img {
+    height:  100%;     
+}
+
+@media screen and (min-width: 768px) {
+    .psplus-game {
+        display: block;
+    }
+}
+
+/* PLAYSTATION STORE SECTION */
+.psstore-title {
+    margin-top: 48px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.psstore-description {
+    font-size: 12px;
+    color: grey;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.psstore-img-container {
+    margin-bottom: 48px;
+}
+
+
+.psstore-img-container img {
+    width: 100%;
+}
+
+/* PLAYSTATION NOW SECTION */
+.psnow-container {
+    background-color: blue;
+}
+
+.psnow-logo img {
+    width: 100%;
+}
+
+.psnow-game {
+    display: none; 
+}
+
+.psnow-game-img {
+    height: 500px; 
+}
+
+.psnow-game-img img {
+    height:  100%;     
+}
+
+@media screen and (min-width: 768px) {
+    .psnow-game {
+        display: block;
+    }
+}
+
+/* SOCIAL MEDIA */
+.social-title {
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 36px;
+}
+
+.social-box-container {
+    text-align: center;
+    padding-bottom: 48px;
+}
+
+.social-box {
+    margin-top: 12px;
+}
+
+.social-box img {
+    width: 100%;
 }
