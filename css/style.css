@@ -6,8 +6,8 @@ starting from MD screens resolutions (768px width) */
 
 /* Utilities */
 .custom-padding {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 /* LOGO-TOPBAR (Sony Logo) */
@@ -113,7 +113,7 @@ starting from MD screens resolutions (768px width) */
 
 /* SMALL BOXES GAME PREVIEWS */
 .small-previews {
-    padding-top: 48px;
+    padding-top: 12px;
 }
 
 .small-box {
@@ -328,13 +328,10 @@ starting from MD screens resolutions (768px width) */
 
 @media screen and (min-width: 992px) {
     .coop-txt p {
-        font-size: 12px;
+        font-size: 14px;
     }
     .coop-title h1 {
         font-size: 34px;
-    }
-    .coop-txt p {
-        font-size: 13px;
     }
 }
 
@@ -422,15 +419,12 @@ starting from MD screens resolutions (768px width) */
     .ps4-section-title h1 {
         font-size: 36px;
     }
-    
     .ps4-item-img {
         width: 520px;
     }
-
     .ps4-section-description p {
-        font-size: 21px;
+        font-size: 18px;
     }
-
     .ps4-item-description p {
         font-size: 18px;
     }
@@ -438,15 +432,16 @@ starting from MD screens resolutions (768px width) */
 
 @media screen and (min-width: 768px) {
     .ps4-section-title h1 {
-        font-size: 36px;
+        font-size: 32px;
     }
-    
     .ps4-item-img {
         width: 190px;
     }
-
     .ps4-item-description p {
-        font-size: 25px;
+        font-size: 18px;
+    }
+    .ps4-item-title h1 {
+        font-size: 24px;
     }
 }
 
@@ -454,11 +449,9 @@ starting from MD screens resolutions (768px width) */
     .ps4-section-title h1 {
         font-size: 36px;
     }
-    
     .ps4-item-img {
         width: 300px;
     }
-
     .ps4-item-description p {
         font-size: 17px;
     }
@@ -468,7 +461,6 @@ starting from MD screens resolutions (768px width) */
     .ps4-item-img {
         width: 350px;
     }
-
     .ps4-item-description p {
         font-size: 20px;
     }
@@ -492,7 +484,7 @@ starting from MD screens resolutions (768px width) */
 }
 
 .psplus-description {
-    padding-top: 48px;
+    padding-top: 24px;
     font-size: 10px;
 }
 
@@ -508,7 +500,7 @@ starting from MD screens resolutions (768px width) */
     background-color: rgba(190,188,187,255);
     border-color: rgba(190,188,187,255);
     opacity: 0.6;
-    padding-bottom: 24px;
+    margin-bottom: 12px;
 }
 
 #csb-plus {
@@ -570,15 +562,9 @@ starting from MD screens resolutions (768px width) */
     width: 100%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
     .psstore-description {
     font-size: 18px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .psstore-description {
-    font-size: 20px;
     }
 }
 
@@ -617,7 +603,7 @@ starting from MD screens resolutions (768px width) */
 #bc-now {
     background-color: #161c3b;
     border-color: #161c3b;
-    padding-bottom: 24px;
+    margin-bottom: 24px;
 }
 
 @media screen and (min-width: 575px) and (max-width: 767px){
@@ -665,7 +651,6 @@ starting from MD screens resolutions (768px width) */
 
 .social-box-container {
     text-align: center;
-    padding-bottom: 48px;
 }
 
 .social-box {
@@ -834,6 +819,9 @@ bcd-red, bcd-blue = dark container
     .bc-white:hover {
         border-color: white;
         cursor: pointer;
+    }
+    .bcl-blue, .bcd-blue {
+        max-width: 45%;
     }
 }
 
