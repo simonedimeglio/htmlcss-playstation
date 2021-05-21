@@ -1,6 +1,9 @@
 /* How i set up my css: I divided every section, 
 inserting the media queries at the end of each of them  */
 
+/* I preferred to insert hover effect and transitions
+starting from MD screens resolutions (768px width) */
+
 /* LOGO-TOPBAR (Sony Logo) */
 .logo-topbar {
     background-color: black;
@@ -67,6 +70,7 @@ inserting the media queries at the end of each of them  */
     background-image: url(../img/jumbo-bg.png);
     background-size: cover;
     background-position: center;
+    padding-bottom: 48px;
 }
 
 .jumbo-container .container {
@@ -89,14 +93,6 @@ inserting the media queries at the end of each of them  */
     margin-bottom: 24px;
 }
 
-.jumbo-button {
-    border: 1px solid red;
-    background-color: red;
-    border-radius: 20px;
-    font-size: 12px;
-    margin-bottom: 48px;
-}
-
 @media screen and (min-width: 992px) {
     .jumbo-txt p {
         font-size: 12px;
@@ -112,9 +108,9 @@ inserting the media queries at the end of each of them  */
     margin-top: 12px;
     border-radius: 20px;
     border: 1px solid white; /* to mantain space */
-    -webkit-transition: margin 0.5s ease-out;
-    -moz-transition: margin 0.5s ease-out;
-    -o-transition: margin 0.5s ease-out;
+    -webkit-transition: margin 0.2s ease-out;
+    -moz-transition: margin 0.2s ease-out;
+    -o-transition: margin 0.2s ease-out;
 }
 
 .small-box-inner {
@@ -125,22 +121,34 @@ inserting the media queries at the end of each of them  */
 
 .small-box img {
     width: 100%;
-    opacity: 0.7;
-    -webkit-transition: opacity 1s ease-out;
-    -moz-transition: opactiy 1s ease-out;
-    -ms-transition: opacity 1s ease-out;
-    -o-transition: opacity 1s ease-out;
-    transition: opacity 1s ease-out;
-}
-
-.small-box:hover {
-    border: 2px solid blue;
-    cursor: pointer;
-    margin-top: 0;  
 }
 
 .small-box:hover img {
     opacity: 1.0; 
+}
+
+@media screen and (min-width: 768px) {
+    .small-box img {
+        opacity: 0.7;
+        -webkit-transition: opacity 0.5s ease-out;
+        -moz-transition: opactiy 0.5s ease-out;
+        -ms-transition: opacity 0.5s ease-out;
+        -o-transition: opacity 0.5s ease-out;
+        transition: opacity 0.5s ease-out;
+    }
+
+    .small-box:hover {
+        margin-top: 0; 
+    }
+
+    .small-box:hover img {
+        opacity: 1.0;
+    }
+
+    .small-box:hover {
+        border: 2px solid blue;
+        cursor: pointer;   
+    }
 }
 
 /* PS5 SECTION */
@@ -178,11 +186,6 @@ inserting the media queries at the end of each of them  */
     width: 100%;
 }
 
-.ps5-button {
-    border-radius: 20px;
-    font-size: 12px;
-}
-
 .small-items {
     margin-top: 12px;
 }
@@ -194,7 +197,7 @@ inserting the media queries at the end of each of them  */
 }
 
 .ps5-item-container:hover {
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid #2d64e6;
 }
 
 .ps5-item-img {
@@ -280,14 +283,6 @@ inserting the media queries at the end of each of them  */
     font-size: 9px;
     margin-top: 12px;
     margin-bottom: 24px;
-}
-
-.coop-button {
-    border: 1px solid #cd3d0f;
-    background-color: #cd3d0f;
-    border-radius: 20px;
-    font-size: 15px;
-    margin-bottom: 48px;
 }
 
 @media screen and (min-width: 576px) {
@@ -392,11 +387,6 @@ inserting the media queries at the end of each of them  */
     color: gray;
 }
 
-.ps4-button {
-    border-radius: 20px;
-    font-size: 12px;
-}
-
 .ps4 {
     padding-bottom: 48px;
 }
@@ -478,9 +468,19 @@ inserting the media queries at the end of each of them  */
     height:  100%;     
 }
 
+#bc-plus {
+    background-color: rgba(190,188,187,255);
+    border-color: rgba(190,188,187,255);
+}
+
 @media screen and (min-width: 768px) {
     .psplus-game {
         display: block;
+    }
+
+    #bc-plus:hover {
+        border-color: #2d64e6;
+        cursor: pointer;
     }
 }
 
@@ -528,9 +528,18 @@ inserting the media queries at the end of each of them  */
     height:  100%;     
 }
 
+#bc-now {
+    background-color: #161c3b;
+    border-color: #161c3b;
+}
+
 @media screen and (min-width: 768px) {
     .psnow-game {
         display: block;
+    }
+    #bc-now:hover {
+        border-color: #2d64e6;
+        cursor: pointer;
     }
 }
 
@@ -597,4 +606,84 @@ footer a:hover {
 
 .bottom-footer-section p {
     font-size: 12px;
+}
+
+
+/* 
+CUSTOM BUTTONS and relative queries
+csb = custom button
+csbg-red = red background button
+csbg-blue = blue background button
+bcl-red, bcl-blue = button container light
+bcd-red, bcd-blue = button container dark
+*/
+
+.csb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-radius: 24px;
+    color: white;
+    font-size: 12px;
+}
+
+.bcl-red, .bcl-blue{
+    border: 1px solid white ;
+    border-radius: 24px;
+    max-width: 50%;
+    background: white;
+    padding: 2px;
+}
+
+.bcd-red, .bcd-blue {
+    border: 1px solid black ;
+    border-radius: 24px;
+    background: black;
+    padding: 2px;
+}
+
+.csbg-red {
+    background-color: #cd3d0f;
+}
+
+.csbg-blue {
+    background-color: #2d64e6;
+}
+
+@media screen and (max-width: 575px) {
+    .bcl-red, .bcl-blue, .bcd-red, .bcd-blue {
+        max-width: 35%;
+    }
+    .csb {
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .bcl-red, .bcl-blue, .bcd-red, .bcd-blue {
+        max-width: 35%;
+    }
+    .csb {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .bcl-red:hover {
+        border-color: #cd3d0f;
+        cursor: pointer;
+    }
+    .bcl-blue:hover {
+        border-color: #2d64e6;
+        cursor: pointer;
+    }
+    .bcd-red:hover {
+        border-color: #cd3d0f;
+        cursor: pointer;
+    }
+    .bcd-blue:hover {
+        border-color: #2d64e6;
+        cursor: pointer;
+    }
 }
