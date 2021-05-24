@@ -1,13 +1,17 @@
-/* How i set up my css: I divided every section, 
-inserting the media queries at the end of each of them  */
+/* 
+I divided every section, positioning media queries at the end of each of them.
+I preferred to insert hover effect and transitions
+starting from MD screens resolutions (768px min width). 
+*/
 
-/* I preferred to insert hover effect and transitions
-starting from MD screens resolutions (768px width) */
-
-/* Utilities */
+/* Utilities and <a> reset */
 .custom-padding {
-    padding-top: 48px;
+    padding-top: 48px; /*NO SHORTHAND: respect container bootstrap rules*/
     padding-bottom: 48px;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* LOGO-TOPBAR (Sony Logo) */
@@ -71,6 +75,12 @@ starting from MD screens resolutions (768px width) */
     border-color: gray;
 }
 
+@media screen and (min-width: 768px) {
+    .nav-item:hover .nav-link.active, .nav-item:hover .nav-arrow::after {
+        color: #2d64e6;
+    }
+}
+
 /* JUMBO */
 .jumbo-container {
     background-image: url(../img/jumbo-bg.png);
@@ -95,8 +105,7 @@ starting from MD screens resolutions (768px width) */
 
 .jumbo-txt p {
     font-size: 12px;
-    margin-top: 12px;
-    margin-bottom: 24px;
+    margin: 12px 0 24px 0;
 }
 
 @media screen and (min-width: 576px) {
@@ -148,17 +157,14 @@ starting from MD screens resolutions (768px width) */
         -o-transition: opacity 0.5s ease-out;
         transition: opacity 0.5s ease-out;
     }
-
     .small-box:hover {
         margin-top: 0; 
     }
-
     .small-box:hover img {
         opacity: 1.0;
     }
-
     .small-box:hover {
-        border: 2px solid blue;
+        border: 2px solid #2d64e6;
         cursor: pointer;   
     }
 }
@@ -190,8 +196,7 @@ starting from MD screens resolutions (768px width) */
 .ps5-sub-description {
     color: gray;
     font-size: 11px;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin: 12px 0;
 }
 
 .playstation-thumb {
@@ -237,10 +242,7 @@ starting from MD screens resolutions (768px width) */
 }
 
 @media screen and (min-width: 576px) {
-    .ps5-section-description {
-        font-size: 18px;
-    }
-    .ps5-sub-description {
+    .ps5-section-description, .ps5-sub-description {
         font-size: 18px;
     }
     .ps5-item-img {
@@ -270,7 +272,7 @@ starting from MD screens resolutions (768px width) */
         opacity: 1.0;
     }
     .ps5-item-container:hover {
-        border-bottom: 1px solid #2d64e6;
+        border-bottom: 2px solid #2d64e6;
     }
 
 }
@@ -310,8 +312,7 @@ starting from MD screens resolutions (768px width) */
 
 .coop-txt p {
     font-size: 9px;
-    margin-top: 12px;
-    margin-bottom: 24px;
+    margin: 12px 0 24px 0;
 }
 
 @media screen and (min-width: 576px) {
@@ -322,7 +323,7 @@ starting from MD screens resolutions (768px width) */
         font-size: 35px;
     }
     .coop-txt p {
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
@@ -331,7 +332,7 @@ starting from MD screens resolutions (768px width) */
         font-size: 14px;
     }
     .coop-title h1 {
-        font-size: 34px;
+        font-size: 35px;
     }
 }
 
@@ -362,6 +363,7 @@ starting from MD screens resolutions (768px width) */
 .newgame-item-img img {
     width: 100%;
     border-radius: 14px;
+    opacity: 0.7;
 }
 
 .newgame-item-txt {
@@ -382,6 +384,17 @@ starting from MD screens resolutions (768px width) */
     }
     .newgame-item-txt h6 {
         font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .newgame-item:hover .newgame-item-img img{
+        opacity: 1.0;
+        cursor: pointer;
+    }
+    .newgame-item:hover .newgame-item-txt h6{
+        text-decoration: underline;
+        cursor: pointer;
     }
 }
 
@@ -422,10 +435,7 @@ starting from MD screens resolutions (768px width) */
     .ps4-item-img {
         width: 520px;
     }
-    .ps4-section-description p {
-        font-size: 18px;
-    }
-    .ps4-item-description p {
+    .ps4-section-description p, .ps4-item-description p {
         font-size: 18px;
     }
 }
@@ -509,9 +519,8 @@ starting from MD screens resolutions (768px width) */
 
 @media screen and (min-width: 575px) and (max-width: 767px){
     .psplus-description {
+        padding: 24px 0 17px 0;
         font-size: 17px;
-        padding-top: 24px;
-        padding-bottom: 17px;
     }
 }
 
@@ -560,6 +569,7 @@ starting from MD screens resolutions (768px width) */
 
 .psstore-img-container img {
     width: 100%;
+    border-radius: 4px;
 }
 
 @media screen and (min-width: 767px) {
@@ -613,13 +623,6 @@ starting from MD screens resolutions (768px width) */
         padding-bottom: 17px;
     }
 }
-/* @media screen and (max-width: 767px) {
-    .psnow-description {
-        padding-top: 24px;
-        padding-bottom: 12px;
-        font-size: 15px;
-    }
-} */
 
 @media screen and (min-width: 768px) {
     .psnow-game {
@@ -659,6 +662,7 @@ starting from MD screens resolutions (768px width) */
 
 .social-box img {
     width: 100%;
+    border-radius: 4px;
 }
 
 /* FOOTER */
@@ -683,7 +687,7 @@ footer a {
 }
 
 footer a:hover {
-    color: white; /* reset hover default effect */
+    color: white; /* reset bootstrap hover default effect */
 }
 
 .footer-ps-logo {
@@ -697,8 +701,7 @@ footer a:hover {
 
 .bottom-footer-section img {
     width: 25%;
-    margin-top: 48px;
-    margin-bottom: 12px;
+    margin: 48px 0 12px 0;
 }
 
 .bottom-footer-section p {
@@ -713,8 +716,6 @@ footer a:hover {
         width: 24%;
     }
 }
-
-
 
 /* 
 CUSTOM BUTTONS and relative queries
@@ -772,8 +773,6 @@ bcd-red, bcd-blue = dark container
 .csbg-blue {
     background-color: #2d64e6;
 }
-
-
 
 @media screen and (max-width: 575px) {
     .bcl-red, .bcd-red {
