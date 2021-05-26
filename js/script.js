@@ -1,0 +1,2 @@
+alert("Hello! This is my copy of the official Sony PlayStation web page (HTML & CSS Only). Oh, almost forgot: you can find some JavaScript test. CY :) ");
+document.getElementById("jstest").innerHTML = 'per rimanere sempre aggiornato!'; 
